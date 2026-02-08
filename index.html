@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit | Video Editing Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f0f0f;color:#fff;scroll-behavior:smooth}
+.top-line{
+  position:absolute;
+  top:40px;
+  font-size:18px;
+  letter-spacing:3px;
+  color:#00ffcc;
+  opacity:0.8;
+  animation:fadeSlide 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeSlide{
+  from{transform:translateY(-10px);opacity:0.4}
+  to{transform:translateY(10px);opacity:1}
+}
+
+.hero{
+  position:relative;
+}
+
+/* HERO SECTION */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(45deg,#0f0f0f,#1c1c1c);
+  flex-direction:column;
+}
+.profile-img{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #00ffcc;
+  box-shadow:0 0 25px #00ffcc88;
+  margin-bottom:20px;
+}
+.hero h1{font-size:42px;color:#00ffcc}
+.hero p{margin-top:10px;color:#ccc}
+
+.btn{
+  margin-top:25px;
+  padding:12px 28px;
+  background:#00ffcc;
+  color:#000;
+  border:none;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{padding:60px 20px;text-align:center}
+h2{color:#00ffcc;margin-bottom:30px}
+
+.services,.videos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px
+}
+.card{
+  background:#1b1b1b;
+  padding:20px;
+  border-radius:12px;
+  width:260px;
+  box-shadow:0 0 15px #00ffcc33
+}
+
+video{
+  width:300px;
+  border-radius:12px;
+  cursor:pointer
+}
+
+footer{
+  padding:30px;
+  text-align:center;
+  background:#111
+}
+.insta{
+  margin-top:10px;
+  color:#00ffcc;
+  font-weight:600
+}/* STATS + EXTRA SECTION */
+.stats{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  margin-top:40px;
+  gap:20px;
+}
+.stat-box{
+  background:#1b1b1b;
+  padding:20px 30px;
+  border-radius:12px;
+  box-shadow:0 0 15px #00ffcc33;
+}
+.stat-box h3{
+  color:#00ffcc;
+  font-size:28px;
+}
+.stat-box p{
+  color:#ccc;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="top-line">
+  CREATIVE • CINEMATIC • SCROLL STOPPING EDITS
+</div>
+  <img src="profile.jpg" class="profile-img">
+  <h1>Hi, I'm Rohit</h1>
+  <p>Professional Video Editor | Reels • Shorts • Long Videos</p>
+  <a href="#portfolio" class="btn">View My Work</a>
+</header>
+<section class="stats">
+  <div class="stat-box">
+    <h3>50+</h3>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat-box">
+    <h3>20+</h3>
+    <p>Happy Clients</p>
+  </div>
+  <div class="stat-box">
+    <h3>1M+</h3>
+    <p>Total Views Generated</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a results-driven video editor who focuses on one thing — making videos that hold attention and convert viewers into followers. 
+I don’t just cut clips, I craft edits with perfect pacing, cinematic transitions, sound design, and storytelling that increases retention and engagement.
+
+I have edited reels, shorts, and long videos in a way that makes content look premium, professional, and addictive to watch. 
+If you want your content to stand out from the crowd and keep your audience hooked till the last second — you are in the right place.
+
+Let’s turn your raw footage into scroll-stopping content.
+</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>My Services</h2>
+<div class="services">
+<div class="card">Instagram Reels Editing</div>
+<div class="card">YouTube Shorts Editing</div>
+<div class="card">Long YouTube Videos</div>
+<div class="card">Cinematic Transitions & Effects</div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<h2>My Edits</h2>
+<div class="videos">
+<video controls src="video1.mp4"></video>
+<video controls src="video2.mp4"></video>
+<video controls src="video3.mp4"></video>
+<video controls src="video4.mp4"></video>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+<p>Want edits like this? Let’s work together.</p>
+
+<div style="display:flex;flex-direction:column;gap:15px;align-items:center;margin-top:25px">
+
+<a class="btn" href="https://instagram.com/_.siteshaper" target="_blank">
+DM me on Instagram @_.siteshaper
+</a>
+
+<a class="btn" href="mailto:rk3215788@gmail.com">
+Email: rk3215788@gmail.com
+</a>
+
+<a class="btn" href="tel:8882712070">
+Call: 8882712070
+</a>
+
+<a class="btn" href="https://wa.me/918882712070?text=Hi%20Rohit,%20I%20want%20video%20editing" target="_blank">
+Chat on WhatsApp
+</a>
+
+</div>
+</section>
+
+<footer>
+© 2026 Rohit | Video Editing Portfolio
+</footer>
+
+<script>
+const videos = document.querySelectorAll("video");
+videos.forEach(v=>{
+  v.addEventListener("play",()=>{
+    videos.forEach(other=>{
+      if(other!==v){other.pause();other.currentTime=0;}
+    })
+  })
+})
+</script>
+
+</body>
+</html>
